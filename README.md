@@ -4,7 +4,7 @@
 https://g.co/gemini/share/bcff2aa6b15f  
 VBA for Bookmarks and Hyperlinks Information Management in MS Word  
 
-
+****
 
 > [!Note]
 > # Meta-Meta-Prompt
@@ -13,5 +13,5 @@ VBA for Bookmarks and Hyperlinks Information Management in MS Word
 >
 > ---
 >
-> {META-PROMPT TO BE ANALYZED}
+> **{META-PROMPT TO BE ANALYZED}**
 
