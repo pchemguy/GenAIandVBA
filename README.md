@@ -1,2 +1,3 @@
-# GenAIandVBA
-AI-assisted development of VBA macros for management of navigation and field information in Word/Zotero/AI manuscript authoring workflow
+# AI-Assisted Development of VBA Macros for Management of Navigation and Field Information in Word/Zotero/AI Manuscript Authoring Workflow
+
+
