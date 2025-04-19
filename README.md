@@ -6,12 +6,14 @@ VBA for Bookmarks and Hyperlinks Information Management in MS Word
 
 ****
 
-> [!Note]
-> # Meta-Meta-Prompt
->
-> Help me improve the following meta-prompt
->
-> ---
->
-> **{META-PROMPT TO BE ANALYZED}**
+```
+Meta-Meta-Prompt
+
+Help me improve the following meta-prompt
+
+---
+
+{META-PROMPT TO BE ANALYZED}
+
+```
 
