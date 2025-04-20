@@ -113,10 +113,14 @@ Make sure to ask me for clarification, if necessary, before starting the prompt 
 ## Notes on GAI-Driven VBA Code Generation
 
 ## VBA Modules
-### Bibliographic Hyperlinks
+### Bibliographic Hyperlinks - modBibliographyHyperlinker
 
 The first generated module 
 modBibliographyHyperlinker.bas
+
+### Internal Navigation - Bookmarks / Hyperlinks - MarkupProcessor
+
+### Zotero Field Recovery - modZoteroFieldRecovery
 
 ## Summary of Shared Artifacts
 
@@ -128,6 +132,7 @@ modBibliographyHyperlinker.bas
 | Language              | VBA Version 6                                                               |
 | Primary host platform | MS Word 2002/2003                                                           |
 | Other host platforms  | MS Word, newer versions (not tested)                                        |
+| Entry Point           | `CreateBibliographyHyperlinks`                                              |
 | Development mode      | Prompt-driven                                                               |
 | Prompt source         | [modBibliographyHyperlinkerPrompt.md][]                                     |
 | AI conversation title | Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging |
@@ -143,6 +148,7 @@ modBibliographyHyperlinker.bas
 | Language              | VBA Version 6                                                               |
 | Primary host platform | MS Word 2002/2003                                                           |
 | Other host platforms  | MS Word, newer versions (not tested)                                        |
+| Entry Point           | `RecoverZoteroFields`                                                       |
 | Development mode      | Prompt-driven                                                               |
 | Prompt source         | [modZoteroFieldRecoveryPrompt.md][]                                         |
 | AI conversation title | Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging |
@@ -158,6 +164,7 @@ modBibliographyHyperlinker.bas
 | Language              | VBA Version 6                                   |
 | Primary host platform | MS Word 2002/2003                               |
 | Other host platforms  | MS Word, newer versions (not tested)            |
+| Entry Point           | `AutoMarkup`                                    |
 | Development mode      | Prompt-driven                                   |
 | Prompt source         | [MarkupProcessorPrompt.md][]                    |
 | Meta-prompt source    | [MarkupProcessorPromptMeta.md][]                |
