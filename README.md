@@ -38,24 +38,52 @@ While the prompt being developed focuses on the final problem or task, the task/
 
 An important variation of meta-prompting where abstraction is largely broken intentionally, is the use of meta-prompts not just for prompt revision, but for extending and/or generating prompts. This approach is useful for developing detailed prompts for complex tasks. The idea is that concise generic prompts usually yield more generic and varying solutions and are often suboptimal for complex tasks. Developing a detailed specific prompt from scratch, on the other hand, is a time consuming process. One possible compromise would to start with a relatively simple prompt or perhaps using for initial prompt of prompt sections developed previously for similar tasks. Such a prompt would include a concise description of the desired task, and the meta-prompt would instruct the model to generate specific detailed steps.
 
+Here is an example of a meta-prompt used with a templated prompt. The ultimate task of the prompt being generated / extended is generation of a VBA macro based on textual description of the desired functionality. The job of the meta-prompting stage is generation of detailed structured description of macro algorithm that should implement desired functionality (see the template placeholder `{To be suggested by AI}` at the end of the prompt). After initial algorithm description is generated, macro workflow may be manually edited or interactively adjusted via successive requests. Once the the algorithm details are refined, the final prompt may be generated and executed in a subsequent request.
 
 
+```
+Analyze the following prompt and consider if instructions are clear and unambiguous. Provide feedback/questions on any potential issues. Devise a workflow to be placed in place of "{To be suggested by AI}".
 
-https://gemini.google.com/app/efb8c56cfe127897
-https://gemini.google.com/app/59e84d4879cebb1c
-https://gemini.google.com/app/1571d7a44e0e6355
+---
+
+# Prompt: Recovery of Citation Fields
+
+## Persona:
+
+============================== CONTENT REDUCED FOR BREVITY. ==============================
+
+## Task:
+
+Create a self-contained VBA6 macro module (`.bas` file content) for Microsoft Word (2002/XP) for recovery of field-based in-text citations after revision of edited text. The text will be pasted next to original text containing all references. 
+
+============================== CONTENT REDUCED FOR BREVITY. ==============================
+
+### Macro Processing Steps:
+
+{To be suggested by AI}
+```
+
+Note: the prompt example above is shown with reduced content for brevity. The full content, as we as an example of an iterative interactive refinement process is available from the shared conversation ([Meta-Prompting with Templated Prompt - VBA Citation Recovery Workflow Design][TemplatedMetaPrompting]). 
+
 
 ## 2. Creation of Bibliographic Hyperlinks
 
 The first generated module 
 modBibliographyHyperlinker.bas
 
+|                       |                                                                              |
+| --------------------- | ---------------------------------------------------------------------------- |
+| AI conversation title | Meta-Prompting with Templated Prompt - VBA Citation Recovery Workflow Design |
+| Public URL            | https://g.co/gemini/share/3239df438507                                       |
+| Private URL           | https://gemini.google.com/app/efb8c56cfe127897                               |
 
 
 
 
 
 
+https://gemini.google.com/app/59e84d4879cebb1c
+https://gemini.google.com/app/1571d7a44e0e6355
 
 
 
@@ -102,3 +130,4 @@ Help me improve the following meta-prompt
 [modBibliographyHyperlinkerPrompt]: modBibliographyHyperlinkerPrompt.md
 [modBibliographyHyperlinker]: modBibliographyHyperlinker.bas
 [modZoteroFieldRecovery]: modZoteroFieldRecovery.bas
+[TemplatedMetaPrompting]: https://g.co/gemini/share/3239df438507
