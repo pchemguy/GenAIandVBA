@@ -34,7 +34,7 @@ This meta-prompt is universal and may work reasonably well with frontier reasoni
 
 While the prompt being developed focuses on the final problem or task, the task/objective of the meta-prompt is the prompting process. In other words, the goal of a prompt is to generate a solution to an actual problem; the goal of a meta-prompt is to generated a prompt that, in turn, will be used to generate a solution to an actual problem. The meta-prompt should, in general, focus on linguistic characteristics of the target prompt and its efficiency as a tool. For example, meta-prompt may instruct the LLM to analyze the prompt as a piece of technical writing and list detailed criteria commonly used for revising technical texts or emphasize some specific points, such as clarity and positive actionable language. Different task may also benefit from somewhat different emphasis. Meta-prompt may also request the model to analyze the prompt, provide constructive feedback, including suggestions for improvements. When performing prompt analysis, LLM will have access to all the same background data that will be used for executing the prompt. For this reason, prompt analysis feedback may include not only linguistic suggestions, but also semantic suggestions. And sometimes meta-prompt abstract nature may be broken to some extent depending on specific task. For these reasons, even meta-prompt may benefit from certain task specific adaptation. In such a case, the baseline meta-prompt above can ne used as meta-meta-prompt (*Help me improve the following **META**-prompt*) to improve meta-prompt. Examples of a meta-prompt draft and its improved versions are included in [MarkupProcessorPromptMeta.md][] and can be also seen in the shared conversations.
 
-## Meta-Prompting with Templated Prompts and In-Context Learning
+## Meta-Prompting with Templated Prompts and In-Context Learning (ICL)
 
 An important variation of meta-prompting technique where abstraction is intentionally broken, is the use of meta-prompts not just for prompt revision, but for extending and/or generating prompts. This approach is useful for developing detailed prompts for complex tasks. The idea is that concise generic prompts are often suboptimal for complex tasks, yielding generic and varying solutions. Developing detailed specific prompts from scratch, on the other hand, is a time consuming process. One possible compromise would be to start with a relatively simple prompt or perhaps using for initial prompt sections of previously developed prompts for similar tasks. Such a prompt would include a concise description of the desired task, and the meta-prompt would instruct the model to generate specific detailed steps.
 
@@ -87,7 +87,22 @@ generated a revised prompt with clear and well organized structure and language.
 {ANSWERS TO LLM FEEDBACK}
 ```
 
-Then the generated prompt is executed yielding the first draft of the module and the subsequent prompts are used for iterative debugging.
+Then the generated prompt is executed yielding the first draft of the module and the subsequent prompts are used for iterative debugging. After debugging is complete, a prompt for a second macro VBA module is generated via meta-prompting with ICL, using the first developed prompt as a reference (search the conversation text for `use previous prompts as a reference`):
+
+```
+Help me create a prompt for generating a VBA6 / MS Word macro (use previous prompts as a reference). The macro would need to
+1. Delete all bookmarks with `AUTO_` prefix.
+2. Search for patterns `{{Supporting Information}}{{BMK: SI}}`.
+3. Verify that
+    1. The text inside the first pair {{}} is visible AND the rest is hidden.
+    2. The content in the second pair starts with "BMK:".
+    3. The trimmed part after "BMK:" contains only alphanumeric characters and underscores.
+    4. The trimmed part after "BMK:" starts with a letter.
+    5. The trimmed part after "BMK:" is no longer than 35 chars.
+4. Create bookmark around the visible part.
+
+Make sure to ask me for clarification, if necessary, before starting the prompt generation process.
+```
 
 ## 2. Creation of Bibliographic Hyperlinks
 
