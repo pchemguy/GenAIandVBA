@@ -109,26 +109,7 @@ Make sure to ask me for clarification, if necessary, before starting the prompt 
 The first generated module 
 modBibliographyHyperlinker.bas
 
-|                       |                                                                              |
-| --------------------- | ---------------------------------------------------------------------------- |
-| AI conversation title | Meta-Prompting with Templated Prompt - VBA Citation Recovery Workflow Design |
-| Public URL            | https://g.co/gemini/share/3239df438507                                       |
-| Private URL           | https://gemini.google.com/app/efb8c56cfe127897                               |
-
-|                       |                                                                              |
-| --------------------- | ---------------------------------------------------------------------------- |
-| AI conversation title | Meta-Prompting with ICL and Refinement -  BMK - Generated VBA Code Debugging |
-| Public URL            | https://g.co/gemini/share/65861d7c05f6                                       |
-| Private URL           | https://gemini.google.com/app/59e84d4879cebb1c                               |
-
-
-
-
-
-
-
-
-
+## Summary of Shared Artifacts
 
 ### MarkupProcessor
 
@@ -139,27 +120,42 @@ modBibliographyHyperlinker.bas
 | Primary host platform | MS Word 2002/2003                               |
 | Other host platforms  | MS Word, newer versions (not tested)            |
 | Development mode      | Prompt-driven                                   |
-| Generative AI model   | Google Gemini Advanced Pro 2.5                  |
 | Prompt source         | [MarkupProcessorPrompt.md][]                    |
 | Meta-prompt source    | [MarkupProcessorPromptMeta.md][]                |
 | AI conversation title | VBA-Based Navigation Markup Workflow in MS Word |
+| Generative AI model   | Google Gemini Advanced Pro 2.5                  |
 | Public URL            | https://g.co/gemini/share/50e01f6b36be          |
 | Private URL           | https://gemini.google.com/app/1571d7a44e0e6355  |
 
+### Meta-Prompting and VBA Macro Module Development Demos
+
+|                       |                                                                              |
+| --------------------- | ---------------------------------------------------------------------------- |
+| AI conversation title | Meta-Prompting with Templated Prompt - VBA Citation Recovery Workflow Design |
+| Generative AI model   | Google Gemini Advanced Pro 2.5                                               |
+| Public URL            | https://g.co/gemini/share/3239df438507                                       |
+| Private URL           | https://gemini.google.com/app/efb8c56cfe127897                               |
+
+|                       |                                                                             |
+| --------------------- | --------------------------------------------------------------------------- |
+| AI conversation title | Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging |
+| Generative AI model   | Google Gemini Advanced Pro 2.5                                              |
+| Public URL            | https://g.co/gemini/share/57062c5d202c                                      |
+| Private URL           | https://gemini.google.com/app/59e84d4879cebb1c                              |
 
 
 
-****
 
-```
-Meta-Meta-Prompt
 
-Help me improve the following meta-prompt
 
----
 
-{META-PROMPT TO BE ANALYZED}
-```
+
+
+
+
+
+
+
 
  
  
@@ -174,4 +170,4 @@ Help me improve the following meta-prompt
 [modZoteroFieldRecovery]: modZoteroFieldRecovery.bas
 [MarkupProcessorChat]: https://g.co/gemini/share/50e01f6b36be
 [TemplatedMetaPrompting]: https://g.co/gemini/share/3239df438507
-[ICLMetaPromptingDebugging]: https://g.co/gemini/share/65861d7c05f6
+[ICLMetaPromptingDebugging]: https://g.co/gemini/share/57062c5d202c
