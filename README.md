@@ -27,12 +27,22 @@ VBA for Bookmarks and Hyperlinks Information Management in MS Word
 
 
 
+### MarkupProcessor
 
-Prompt-driven development using Google Gemini Advanced Pro 2.5.
-Prompt source:
-Meta-prompt source:
-Private conversation URL: https://gemini.google.com/app/1571d7a44e0e6355
-Shared conversation URL:
+
+|                              |                                                 |
+| ---------------------------- | ----------------------------------------------- |
+| Module                       | MarkupProcessor.bas                             |
+| Language                     | VBA Version 6                                   |
+| Primary host platform        | MS Word 2002/2003                               |
+| Other host platforms         | MS Word, newer versions (not tested)            |
+| Development mode             | Prompt-driven                                   |
+| Generative AI model          | Google Gemini Advanced Pro 2.5                  |
+| Prompt source                | MarkupProcessorPrompt.md                        |
+| Meta-prompt source           | MarkupProcessorPromptMeta.md                    |
+| AI conversation title        | VBA-Based Navigation Markup Workflow in MS Word |
+| AI conversation URL, public  | https://g.co/gemini/share/50e01f6b36be          |
+| AI conversation URL, private | https://gemini.google.com/app/1571d7a44e0e6355  |
 
 
 
