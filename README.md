@@ -32,8 +32,10 @@ Help me improve the following prompt
  
 This meta-prompt is universal and may work reasonably well with frontier reasoning models (probably, non-reasoning models as well) and moderately complex tasks/prompts. For more complex prompts, it might be beneficial introducing an intermediate abstraction layer by elaborating on the meta-prompt.
 
-While the prompt being developed focuses on the final problem or task, the task/objective of the meta-prompt is the prompting process. In other words, a the goal of a prompt is to generate a solution to actual problem; the goal of a meta-prompt is to generated a prompt that, in turn, will be used to generate a solution to actual problem
-The meta-prompt should, in general, focus on linguistic characteristics of the target prompt 
+While the prompt being developed focuses on the final problem or task, the task/objective of the meta-prompt is the prompting process. In other words, the goal of a prompt is to generate a solution to an actual problem; the goal of a meta-prompt is to generated a prompt that, in turn, will be used to generate a solution to an actual problem. The meta-prompt should, in general, focus on linguistic characteristics of the target prompt and its efficiency as a tool. For example, meta-prompt may instruct the LLM to analyze the prompt as a piece of technical writing and list detailed criteria commonly used for revising technical texts or emphasize some specific points, such as clarity and positive actionable language. Different task may also benefit from somewhat different emphasis. Meta-prompt may also request the model to analyze the prompt, provide constructive feedback, including suggestions for improvements. When performing prompt analysis, LLM will have access to all the same background data that will be used for executing the prompt. For this reason, prompt analysis feedback may include not only linguistic suggestions, but also semantic suggestions. And sometimes meta-prompt abstract nature may be broken to some extent depending on specific task. For these reasons, even meta-prompt may benefit from certain task specific adaptation. In such a case, the baseline meta-prompt above can ne used as meta-meta-prompt to improve meta-prompt. Examples of a meta-prompt draft and its improved versions are included in [MarkupProcessorPromptMeta.md][] and can be also seen in the shared conversations.
+
+
+
 
 
 
@@ -93,7 +95,8 @@ Help me improve the following meta-prompt
  <!-- References -->
 
 [Zotero]: https://zotero.org
-[MarkupProcessorPrompt]: MarkupProcessorPrompt.md
+[MarkupProcessorPrompt.md]: MarkupProcessorPrompt.md
+[MarkupProcessorPromptMeta.md]: MarkupProcessorPromptMeta.md
 [MarkupProcessor]: MarkupProcessor.bas
 [modBibliographyHyperlinkerPrompt]: modBibliographyHyperlinkerPrompt.md
 [modBibliographyHyperlinker]: modBibliographyHyperlinker.bas
