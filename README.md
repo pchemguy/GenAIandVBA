@@ -32,7 +32,8 @@ Help me improve the following prompt
  
 This meta-prompt is universal and may work reasonably well with frontier reasoning models (probably, non-reasoning models as well) and moderately complex tasks/prompts. For more complex prompts, it might be beneficial introducing an intermediate abstraction layer by elaborating on the meta-prompt.
 
-While the prompt being developed focuses on the final problem or task, the task/objective of the meta-prompt is the prompting process. The meta-prompt should, in general, focus on linguistic characteristics of the target prompt 
+While the prompt being developed focuses on the final problem or task, the task/objective of the meta-prompt is the prompting process. In other words, a the goal of a prompt is to generate a solution to actual problem; the goal of a meta-prompt is to generated a prompt that, in turn, will be used to generate a solution to actual problem
+The meta-prompt should, in general, focus on linguistic characteristics of the target prompt 
 
 
 
