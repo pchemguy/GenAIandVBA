@@ -77,12 +77,16 @@ modBibliographyHyperlinker.bas
 | Public URL            | https://g.co/gemini/share/3239df438507                                       |
 | Private URL           | https://gemini.google.com/app/efb8c56cfe127897                               |
 
+|                       |                                                                              |
+| --------------------- | ---------------------------------------------------------------------------- |
+| AI conversation title | Meta-Prompting with ICL and Refinement -  BMK - Generated VBA Code Debugging |
+| Public URL            | https://g.co/gemini/share/65861d7c05f6                                       |
+| Private URL           | https://gemini.google.com/app/59e84d4879cebb1c                               |
 
 
 
 
 
-https://gemini.google.com/app/59e84d4879cebb1c
 https://gemini.google.com/app/1571d7a44e0e6355
 
 
