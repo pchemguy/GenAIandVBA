@@ -40,7 +40,6 @@ An important variation of meta-prompting technique where abstraction is intentio
 
 Here is an example of a meta-prompt used with a templated prompt. The ultimate task of the prompt being generated / extended is generation of a VBA macro based on textual description of the desired functionality. The job of the meta-prompting stage is generation of detailed structured description of macro algorithm that should implement desired functionality (see the template placeholder `{To be suggested by AI}` at the end of the prompt). After initial algorithm description is generated, macro workflow may be manually edited or interactively adjusted via successive requests. Once the the algorithm details are refined, the final prompt may be generated and executed in a subsequent request.
 
-
 ```
 Analyze the following prompt and consider if instructions are clear and unambiguous. Provide feedback/questions
 on any potential issues. Devise a workflow to be placed in place of "{To be suggested by AI}".
@@ -67,6 +66,28 @@ in-text citations after revision of edited text. The text will be pasted next to
 
 Note: the prompt example above is shown with reduced content for brevity. The full content, as we as an example of an iterative interactive refinement process is available from the shared conversation ([Meta-Prompting with Templated Prompt - VBA Citation Recovery Workflow Design][TemplatedMetaPrompting]). 
 
+Another sample conversation ([Meta-Prompting with ICL and Refinement -  BMK - Generated VBA Code Debugging][ICLMetaPromptingDebugging]) used to develop two macro VBA modules starts with a basic meta-prompt
+
+```
+Analyze the following prompt and consider if instructions are clear and
+unambiguous.Provide feedback/questions on any potential issues.
+
+{PROMPT TO BE ANALYZED}
+```
+
+and demonstrates interactive improvements of the prompt by providing answers to LLM's feedback
+
+```
+Revise the prompt with the following answers, analyze it again and consider if there are still
+some questions (of if some answers are unclear). Provide additional feedback, if necessary, or
+generated a revised prompt with clear and well organized structure and language.
+
+# Answers
+
+{ANSWERS TO LLM FEEDBACK}
+```
+
+Then the generated prompt is executed yielding the first draft of the module and the subsequent prompts are used for iterative debugging.
 
 ## 2. Creation of Bibliographic Hyperlinks
 
@@ -137,3 +158,4 @@ Help me improve the following meta-prompt
 [modBibliographyHyperlinker]: modBibliographyHyperlinker.bas
 [modZoteroFieldRecovery]: modZoteroFieldRecovery.bas
 [TemplatedMetaPrompting]: https://g.co/gemini/share/3239df438507
+[ICLMetaPromptingDebugging]: https://g.co/gemini/share/65861d7c05f6
