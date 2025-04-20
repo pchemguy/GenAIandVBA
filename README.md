@@ -12,7 +12,7 @@ The VBA code is developed as standard macro modules and is shared as exported pl
 
 ## 1. Development Workflow
 
-## Prompt-Driven Development Workflow: Prompt -> Meta-Prompt -> Meta-Meta-Prompt
+## Prompt-Driven Workflow: **Prompt -> Meta-Prompt -> Meta-Meta-Prompt**
 
 https://gemini.google.com/app/efb8c56cfe127897
 https://gemini.google.com/app/59e84d4879cebb1c
