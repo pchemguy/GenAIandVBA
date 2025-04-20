@@ -1,6 +1,6 @@
 # AI-Driven Meta-Prompt Generation
 
-#### Starting Meta-Prompt
+### Starting Meta-Prompt
 
 The following meta-meta-prompt and a hand-written and meta-prompt draft were used for generating revised meta-prompts:
 
@@ -19,7 +19,7 @@ The following meta-meta-prompt and a hand-written and meta-prompt draft were use
 
 The model generated two revised meta-prompts.
 
-#### Option 1: Direct Enhancement (Closer to original structure) - Actually Used
+### Option 1: Direct Enhancement (Closer to original structure) - Actually Used
 
 >[!Note]
 >
