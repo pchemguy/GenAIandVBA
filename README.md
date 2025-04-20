@@ -10,9 +10,18 @@ I am sharing generated macro modules, prompts and some related prompt engineerin
 
 The VBA code is developed as standard macro modules and is shared as exported plain-text VBA source code files which can be imported into the target document project for further use. All shared code is designed to operate on the `ActiveDocument` object, which means they can be imported into a Word document, which can then be saved as a Word add-in, loaded into Word and used like any other add-in provided tools (though I have not tested this approach yet). The code has only been tested in Word 2002/2003, though it should in theory work as-is with later versions as well. Presently, there is no GUI available: to activate associated functionality, the main entry (implemented as a public procedure) of the corresponding module must be executed either from the VBA editor or via the Word's standard macro running mechanism.
 
-## 1. Development Workflow
+## Prompt-Driven Workflow: Prompt -> Meta-Prompt -> Meta-Meta-Prompt
 
-## Prompt-Driven Workflow: **Prompt -> Meta-Prompt -> Meta-Meta-Prompt**
+### Basic Prompt Structure
+
+When I do not have a suitable prompt to start with and need to start from scratch, I think of how I would describe the task to find an expert. Such a description might include
+1. List of expert qualifications and skills I consider important for solving the problem (What I could include in a job posting? These qualifications can be projected on to model using the role prompting techniques, for example, to increase overall response quality, the level of detail, reduce variability between runs).
+2. Description of the problem (e.g., it might include the description of a particular workflow I need to enable or improve; present specific limitations, such as unreliable, limited, or missing implementation for certain operations leading to inefficient or broken pipelines).
+3. Specification of any requirements and limitations (This section may include, for example, previously developed snippets used for similar problems or texts adapted from common guidelines. For example, if I need a Python script, I might incorporate, adapt or reference one of the common Python Style Guides and some more general programming practices )
+4. Information on solution I need, how I want to use it (perhaps sample workflows).
+
+
+
 
 https://gemini.google.com/app/efb8c56cfe127897
 https://gemini.google.com/app/59e84d4879cebb1c
