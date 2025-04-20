@@ -1,19 +1,21 @@
-# AI-Driven Meta Prompt Generation
+# AI-Driven Meta-Prompt Generation
+
+#### Starting Meta-Prompt
 
 The following meta-meta-prompt and a hand-written and meta-prompt draft were used for generating revised meta-prompts:
 
-```
-Help me improve the following meta-prompt
-
----
-
-Help me improve the following LLM prompt:
-- Check general English usage
-- Pay attention to clarity, logical organization and flow, structure, structural and grammatical parallelism, etc.
-- Strive for positive and actionable language, keeping negatives and exceptions as clarifiers or emphasizers.
-- Identify potential ambiguities.
-- If relevant, suggest additional guidelines / details in line with overall prompt intent and goals.
-```
+>[!Note]
+>
+>Help me improve the following meta-prompt
+>
+>---
+>
+>Help me improve the following LLM prompt:
+>- Check general English usage
+>- Pay attention to clarity, logical organization and flow, structure, structural and grammatical parallelism, etc.
+>- Strive for positive and actionable language, keeping negatives and exceptions as clarifiers or emphasizers.
+>- Identify potential ambiguities.
+>- If relevant, suggest additional guidelines / details in line with overall prompt intent and goals.
 
 The model generated two revised meta-prompts.
 
