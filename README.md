@@ -12,13 +12,27 @@ The VBA code is developed as standard macro modules and is shared as exported pl
 
 ## Prompt-Driven Workflow: Prompt -> Meta-Prompt -> Meta-Meta-Prompt
 
-### Blank Page - Starting Drafts of Prompts for Complex Tasks
-
-While there are a variety of resources featuring prompt libraries, I do not really use them. When I do not have a suitable prompt to start with and need to start from scratch, I think of how I would describe the task to find an expert. Such a description might include
-1. List of expert qualifications and skills I consider important for solving the problem (What I could include in a job posting? These qualifications can be projected on to model using the role prompting techniques, for example, to increase overall response quality, the level of detail, reduce variability between runs).
+While there are a variety of resources featuring prompt libraries, usually, I do not use them. When I do not have a suitable prompt to start with and need to start from scratch, I think of how I would describe the task to find an expert. Such a description might include
+1. List of expert qualifications and skills I consider important for solving the problem, e.g., what I could include in a job posting (these characteristics can be projected on to model using the role prompting techniques).
 2. Description of the problem (e.g., it might include the description of a particular workflow I need to enable or improve; present specific limitations, such as unreliable, limited, or missing implementation for certain operations leading to inefficient or broken pipelines).
 3. Specification of any requirements and limitations (This section may include, for example, previously developed snippets used for similar problems or texts adapted from common guidelines. For example, if I need a Python script, I might incorporate, adapt or reference one of the common Python Style Guides and some more general programming practices )
 4. Information on solution I need, how I want to use it (perhaps sample workflows).
+
+I mostly focus on complex tasks that benefit from correspondingly complex prompt. Complexity, however, needs to be properly managed. Two common ways to structure complex prompts are Markdown-based and xml-based formatting. Personally, I use Markdown with Obsidian.md editor.
+
+After having a preliminary draft, I might test it to see the initial model response, but more often I would use an abstract meta-prompt to have the model to improve the prompt itself first. One of the simplest In the simplest meta-prompts is `Help me improve the following prompt` used like this:  
+
+```
+Help me improve the following prompt
+
+---
+
+{PROMPT TO BE ANALYZED}
+```
+ 
+This meta-prompt is universal and may work reasonably well with frontier reasoning models (probably, non-reasoning models as well) and moderately complex tasks/prompts. For more complex prompts, it might be beneficial introducing an intermediate abstraction layer by elaborating on the meta-prompt.
+
+While the prompt being developed focuses on the final problem or task, the task/objective of the meta-prompt is the prompting process. The meta-prompt should, in general, focus on linguistic characteristics of the target prompt 
 
 
 
@@ -71,7 +85,6 @@ Help me improve the following meta-prompt
 ---
 
 {META-PROMPT TO BE ANALYZED}
-
 ```
 
  
