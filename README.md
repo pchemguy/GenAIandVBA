@@ -113,14 +113,25 @@ Make sure to ask me for clarification, if necessary, before starting the prompt 
 ## Notes on GAI-Driven VBA Code Generation
 
 ## VBA Modules
-### Bibliographic Hyperlinks - modBibliographyHyperlinker
+### Zotero Bibliographic Hyperlinks - modBibliographyHyperlinker
 
-The first generated module 
-modBibliographyHyperlinker.bas
+[modBibliographyHyperlinker.bas][] module (entry point: `CreateBibliographyHyperlinks`) creates local hyperlinks that make it possible to navigate from in-text citation to associated bibliographic record in the bibliography list. Bibliography must be created before executing this module. Requirements:
+- In-text citations: `[23]`, `[25,26,30]`, `[17-19]`, `[17-19, 23, 25]`.
+- Bibliography list items: Must begin with `[#]` (e.g., `[7]`, `[23]`).
+- Field-based citations.
+Required VBA project references:
+- Microsoft VBScript Regular Expressions 5.5
+- Microsoft Scripting Runtime
+
+The code looks for the bibliography field and creates for each item a bookmark using template `BIB_{#}` (e.g., `BIB_7`, `BIB_23`). The bookmarks cover the bracketed number (e.g., `[7]`, `[23]`). The code looks for all in-text citations and creates a hyperlink for each number leading to corresponding bibliographic item. For ranges, the entire range points to the first citation in the range. Before creating bookmarks and links, the code deletes all bookmarks that match the name template and all hyperlinks targeting such bookmarks.
+
+### Zotero Field Recovery - modZoteroFieldRecovery
+
+[modZoteroFieldRecovery.bas][] module (entry point: `RecoverZoteroFields`) facilitates recovery of lost in-text citation fields (for bracketed in-text citation only, e.g., `[23]`), after the text has been copied outside Word as plain text with all in-text citation losing associated field metadata. It is important that the old text section is not deleted until this module is executed. This module looks for plain-text in-text citations and it assumes that the same citations with proper field metadata are still in the document. When the module is executed, the old citation are matched based on the displayed text and replace plain-text citations.
 
 ### Internal Navigation - Bookmarks / Hyperlinks - MarkupProcessor
 
-### Zotero Field Recovery - modZoteroFieldRecovery
+[MarkupProcessor.bas][] module (entry point: `AutoMarkup`) enables encoding local hyperlinks and bookmarks via plain text, so that the associated metadata can be recovered automatically if the text section is copied outside Word, for example, for proofreading, and copied back. The module assumes that such bookmarks and hyperlinks follow templates: `{{Displayed Text}}{{BMK: #BookmarkName}}` and `{{Displayed Text}}{{LNK: #BookmarkName}}`. The code set everything, except for the `Displayed Text` as `Hidden` text, which is not exported to PDF.
 
 ## Summary of Shared Artifacts
 
