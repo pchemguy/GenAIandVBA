@@ -12,9 +12,9 @@ The VBA code is developed as standard macro modules and is shared as exported pl
 
 ## Prompt-Driven Workflow: Prompt -> Meta-Prompt -> Meta-Meta-Prompt
 
-### Basic Prompt Structure
+### Blank Page - Starting Drafts of Prompts for Complex Tasks
 
-When I do not have a suitable prompt to start with and need to start from scratch, I think of how I would describe the task to find an expert. Such a description might include
+While there are a variety of resources featuring prompt libraries, I do not really use them. When I do not have a suitable prompt to start with and need to start from scratch, I think of how I would describe the task to find an expert. Such a description might include
 1. List of expert qualifications and skills I consider important for solving the problem (What I could include in a job posting? These qualifications can be projected on to model using the role prompting techniques, for example, to increase overall response quality, the level of detail, reduce variability between runs).
 2. Description of the problem (e.g., it might include the description of a particular workflow I need to enable or improve; present specific limitations, such as unreliable, limited, or missing implementation for certain operations leading to inefficient or broken pipelines).
 3. Specification of any requirements and limitations (This section may include, for example, previously developed snippets used for similar problems or texts adapted from common guidelines. For example, if I need a Python script, I might incorporate, adapt or reference one of the common Python Style Guides and some more general programming practices )
