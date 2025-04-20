@@ -11,6 +11,13 @@ I am sharing generated macro modules, prompts and some related prompt engineerin
 The VBA code is developed as standard macro modules and is shared as exported plain-text VBA source code files which can be imported into the target document project for further use. All shared code is designed to operate on the `ActiveDocument` object, which means they can be imported into a Word document, which can then be saved as a Word add-in, loaded into Word and used like any other add-in provided tools (though I have not tested this approach yet). The code has only been tested in Word 2002/2003, though it should in theory work as-is with later versions as well. Presently, there is no GUI available: to activate associated functionality, the main entry (implemented as a public procedure) of the corresponding module must be executed either from the VBA editor or via the Word's standard macro running mechanism.
 
 ## 1. Development Workflow
+
+## "Prompt -> Meta-Prompt -> Meta-Meta-Prompt" Workflow
+
+https://gemini.google.com/app/efb8c56cfe127897
+https://gemini.google.com/app/59e84d4879cebb1c
+https://gemini.google.com/app/1571d7a44e0e6355
+
 ## 2. Creation of Bibliographic Hyperlinks
 
 The first generated module 
@@ -21,14 +28,12 @@ modBibliographyHyperlinker.bas
 
 
 
-https://g.co/gemini/share/bcff2aa6b15f  
-VBA for Bookmarks and Hyperlinks Information Management in MS Word  
+
 
 
 
 
 ### MarkupProcessor
-
 
 |                       |                                                 |
 | --------------------- | ----------------------------------------------- |
