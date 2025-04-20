@@ -42,7 +42,8 @@ Here is an example of a meta-prompt used with a templated prompt. The ultimate t
 
 
 ```
-Analyze the following prompt and consider if instructions are clear and unambiguous. Provide feedback/questions on any potential issues. Devise a workflow to be placed in place of "{To be suggested by AI}".
+Analyze the following prompt and consider if instructions are clear and unambiguous. Provide feedback/questions
+on any potential issues. Devise a workflow to be placed in place of "{To be suggested by AI}".
 
 ---
 
@@ -54,7 +55,8 @@ Analyze the following prompt and consider if instructions are clear and unambigu
 
 ## Task:
 
-Create a self-contained VBA6 macro module (`.bas` file content) for Microsoft Word (2002/XP) for recovery of field-based in-text citations after revision of edited text. The text will be pasted next to original text containing all references. 
+Create a self-contained VBA6 macro module (`.bas` file content) for Microsoft Word (2002/XP) for recovery of field-based
+in-text citations after revision of edited text. The text will be pasted next to original text containing all references. 
 
 ============================== CONTENT REDUCED FOR BREVITY. ==============================
 
@@ -87,7 +89,7 @@ modBibliographyHyperlinker.bas
 
 
 
-https://gemini.google.com/app/1571d7a44e0e6355
+
 
 
 
