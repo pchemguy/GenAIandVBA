@@ -104,7 +104,7 @@ Help me create a prompt for generating a VBA6 / MS Word macro (use previous prom
 Make sure to ask me for clarification, if necessary, before starting the prompt generation process.
 ```
 
-## 2. Creation of Bibliographic Hyperlinks
+## Bibliographic Hyperlinks
 
 The first generated module 
 modBibliographyHyperlinker.bas
@@ -140,8 +140,8 @@ modBibliographyHyperlinker.bas
 | Other host platforms  | MS Word, newer versions (not tested)            |
 | Development mode      | Prompt-driven                                   |
 | Generative AI model   | Google Gemini Advanced Pro 2.5                  |
-| Prompt source         | MarkupProcessorPrompt.md                        |
-| Meta-prompt source    | MarkupProcessorPromptMeta.md                    |
+| Prompt source         | [MarkupProcessorPrompt.md][]                    |
+| Meta-prompt source    | [MarkupProcessorPromptMeta.md][]                |
 | AI conversation title | VBA-Based Navigation Markup Workflow in MS Word |
 | Public URL            | https://g.co/gemini/share/50e01f6b36be          |
 | Private URL           | https://gemini.google.com/app/1571d7a44e0e6355  |
