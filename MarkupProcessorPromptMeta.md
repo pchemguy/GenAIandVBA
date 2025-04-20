@@ -1,5 +1,7 @@
 # AI-Driven Meta-Prompt Generation
 
+See [README.md](README.md) for details.
+
 ### Starting Meta-Prompt
 
 The following meta-meta-prompt and a hand-written and meta-prompt draft were used for generating revised meta-prompts:
