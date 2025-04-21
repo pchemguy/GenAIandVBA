@@ -203,22 +203,6 @@ The code looks for the bibliography field and creates for each item a bookmark u
 | Generative AI model   | Google Gemini Advanced 2.5 Pro                                              |
 | Public URL            | https://g.co/gemini/share/57062c5d202c                                      |
 | Private URL           | https://gemini.google.com/app/59e84d4879cebb1c                              |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
  
  <!-- References -->
 
