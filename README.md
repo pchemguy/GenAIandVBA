@@ -16,7 +16,6 @@ This repository provides a practical solution and case study for improving acade
     - Ready-to-use VBA module source code (`.bas` files).
     - The exact prompts used for AI generation.
     - Links to the AI conversations demonstrating the development and debugging process.
-    - Detailed explanations and usage instructions (in this README).
 
 ---
 
