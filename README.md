@@ -11,7 +11,9 @@ This repository provides a practical solution and case study for improving acade
     - Automatically create hyperlinks between Zotero citations and bibliography items (`modBibliographyHyperlinker`).
     - Recover lost Zotero field information after external plain-text editing (`modZoteroFieldRecovery`).
     - Manage internal document bookmarks and hyperlinks using a plain-text markup that survives copy-pasting (`MarkupProcessor`).
-- **Methodology:** Demonstrates **Prompt-Driven Development (PDD)** using Google Gemini Advanced 2.5 Pro. Includes insights into using meta-prompting and In-Context Learning (ICL) to generate and refine the VBA code.
+- **Methodology:** Demonstrates **Prompt-Driven Development (PDD)** using Google Gemini Advanced 2.5 Pro.
+    - Includes insights into using **meta-prompting** and In-Context Learning (ICL) to generate and refine the VBA code.
+    - Investigates the trade-offs between prompt engineering effort and debugging time. Suggests that investing in more detailed prompts upfront (guiding the AI's logic) can significantly streamline subsequent AI-driven development of the generated VBA code, especially for complex tasks.
 - **Contents:** Includes:
     - Ready-to-use VBA module source code (`.bas` files).
     - The exact prompts used for AI generation.
