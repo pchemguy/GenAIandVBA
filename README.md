@@ -112,6 +112,11 @@ Help me create a prompt for generating a VBA6 / MS Word macro (use previous prom
 Make sure to ask me for clarification, if necessary, before starting the prompt generation process.
 ```
 
+## Notes on AI-Assisted VBA Development
+
+I am under the impression that for a number of reasons, VBA code generation is somewhat more challenging for AI than, for example, Python. In fact, the three presented modules, employ somewhat different (meta-)prompting strategies. With the first module [modZoteroFieldRecovery.bas][], I described the desired functionality to AI and asked it to generate the workflow (the "Macro Processing Steps" in the [prompt][modZoteroFieldRecoveryPrompt.md]), following by module generation and interactive iterative debugging. With the second module, [modBibliographyHyperlinker.bas][] ([prompt][modBibliographyHyperlinkerPrompt.md]), I followed a similar strategy, except I could also use the first generated prompt for ICL during the meta-prompting stage. With the last module, [MarkupProcessor.bas][], the same strategy initially seemed to work, but when I tried to add a feature the process got messed up, so I had to start from scratch. The second time I amended my strategy 
+
+([prompt][MarkupProcessorPrompt.md])
 ## VBA Modules
 ### Zotero Bibliographic Hyperlinks - modBibliographyHyperlinker
 
