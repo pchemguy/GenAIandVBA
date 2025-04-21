@@ -1,4 +1,4 @@
-# AI-Driven VBA Development for Enhanced Word/Zotero/AI Authoring Workflows
+# AI-Driven VBA Development for Enhanced Word/Zotero/AI Manuscript Authoring Workflows
 
 Academic manuscript authoring often involves integrating tools like Microsoft Word for writing, Zotero for reference management, and increasingly, Generative AI (GAI) for drafting and revision assistance. However, a common workflow challenge arises when transferring text between Word and plain-text AI interfaces: critical metadata, such as Zotero citation fields and internal document hyperlinks, is often lost. Furthermore, standard Zotero integration in Word does not automatically create navigable hyperlinks between in-text citations and their corresponding entries in the bibliography, hindering reader navigation, especially in PDF outputs.
 
@@ -113,8 +113,6 @@ Currently, there is no custom GUI. To run a macro:
 
 **Important:** Always **save your document** before running macros, especially during testing. These macros modify the `ActiveDocument`.
 
----
-
 ### Module Details
 
 #### 1. Zotero Bibliographic Hyperlinks (`modBibliographyHyperlinker`)
@@ -146,76 +144,47 @@ Currently, there is no custom GUI. To run a macro:
 
 ## Summary of Shared Artifacts
 
-
 ### modBibliographyHyperlinker
 
-
-|                       |                                                                             |
-| --------------------- | --------------------------------------------------------------------------- |
-| Module                | [modBibliographyHyperlinker.bas][]                                          |
-| Language              | VBA Version 6                                                               |
-| Primary host platform | MS Word 2002/2003                                                           |
-| Other host platforms  | MS Word, newer versions (not tested)                                        |
-| Entry Point           | `CreateBibliographyHyperlinks`                                              |
-| Development mode      | Prompt-driven                                                               |
-| Prompt source         | [modBibliographyHyperlinkerPrompt.md][]                                     |
-| AI conversation title | Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging |
-| Generative AI model   | Google Gemini Advanced 2.5 Pro                                              |
-| Public URL            | https://g.co/gemini/share/57062c5d202c                                      |
-| Private URL           | https://gemini.google.com/app/59e84d4879cebb1c                              |
-
-
-|                          |                                                                                                                                                                             |
-| :----------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Module                   | [modBibliographyHyperlinker.bas][]                                                                                                                                          |
-| Prompt                   | [modBibliographyHyperlinkerPrompt.md][]                                                                                                                                     |
-| Development Conversation | [Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging][ICLMetaPromptingDebugging]  <br>(Private URL: https://gemini.google.com/app/59e84d4879cebb1c) |
-| Language                 | VBA Version 6                                                                                                                                                               |
-| Development Platform     | MS Word 2002/2003                                                                                                                                                           |
-| Untested Host Platform   | MS Word, newer versions                                                                                                                                                     |
-| Entry Point              | CreateBibliographyHyperlinks                                                                                                                                                |
-| Development Mode         | Prompt-driven (via Google Gemini Advanced 2.5 Pro)                                                                                                                          |
+|                          |                                                                                                                                                                          |
+| :----------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Module                   | [modBibliographyHyperlinker.bas][]                                                                                                                                       |
+| Prompt                   | [modBibliographyHyperlinkerPrompt.md][]                                                                                                                                  |
+| Development Conversation | [Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging][ICLMetaPromptingDebugging] ([Private URL](https://gemini.google.com/app/59e84d4879cebb1c)) |
+| Language                 | VBA Version 6                                                                                                                                                            |
+| Host Platform            | MS Word 2002/2003, newer versions (untested)                                                                                                                             |
+| Entry Point              | CreateBibliographyHyperlinks                                                                                                                                             |
+| Development Mode         | Prompt-driven (via Google Gemini Advanced 2.5 Pro)                                                                                                                       |
 
 ### modZoteroFieldRecovery
 
-| | |
-| :------------------------- | :-------------------------------------------------------------------------- |
-| Module | [modZoteroFieldRecovery.bas][] |
-| Prompt | [modZoteroFieldRecoveryPrompt.md][] |
-| Development Conversation | [Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging][ICLMetaPromptingDebugging] (Public: https://g.co/gemini/share/57062c5d202c) |
-| Language | VBA Version 6 |
-| Host Platform (Tested) | MS Word 2002/2003 |
-| Host Platform (Untested) | MS Word, newer versions |
-| Entry Point | RecoverZoteroFields |
-| Development Mode | Prompt-driven (via Google Gemini Advanced 2.5 Pro) |
+|                          |                                                                                                                                                                          |
+| :----------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Module                   | [modZoteroFieldRecovery.bas][]                                                                                                                                           |
+| Prompt                   | [modZoteroFieldRecoveryPrompt.md][]                                                                                                                                      |
+| Development Conversation | [Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging][ICLMetaPromptingDebugging] ([Private URL](https://gemini.google.com/app/59e84d4879cebb1c)) |
+| Language                 | VBA Version 6                                                                                                                                                            |
+| Host Platform            | MS Word 2002/2003, newer versions (untested)                                                                                                                             |
+| Entry Point              | RecoverZoteroFields                                                                                                                                                      |
+| Development Mode         | Prompt-driven (via Google Gemini Advanced 2.5 Pro)                                                                                                                       |
 
 ### MarkupProcessor
 
-|                          |                                                                                                                         |
-| :----------------------- | :---------------------------------------------------------------------------------------------------------------------- |
-| Module                   | [MarkupProcessor.bas][]                                                                                                 |
-| Prompt                   | [MarkupProcessorPrompt.md][]                                                                                            |
-| Meta-Prompt              | [MarkupProcessorPromptMeta.md][]                                                                                        |
-| Development Conversation | [VBA-Based Navigation Markup Workflow in MS Word][MarkupProcessorChat] (Public: https://g.co/gemini/share/50e01f6b36be) |
-| Language                 | VBA Version 6                                                                                                           |
-| Host Platform (Tested)   | MS Word 2002/2003                                                                                                       |
-| Host Platform (Untested) | MS Word, newer versions                                                                                                 |
-| Entry Point              | AutoMarkup                                                                                                              |
-| Development Mode         | Prompt-driven (via Google Gemini Advanced 2.5 Pro)                                                                      |
+|                          |                                                                                                                                        |
+| :----------------------- | :------------------------------------------------------------------------------------------------------------------------------------- |
+| Module                   | [MarkupProcessor.bas][]                                                                                                                |
+| Prompt                   | [MarkupProcessorPrompt.md][]                                                                                                           |
+| Meta-Prompt              | [MarkupProcessorPromptMeta.md][]                                                                                                       |
+| Development Conversation | [VBA-Based Navigation Markup Workflow in MS Word][MarkupProcessorChat] ([Private URL](https://gemini.google.com/app/1571d7a44e0e6355)) |
+| Language                 | VBA Version 6                                                                                                                          |
+| Host Platform            | MS Word 2002/2003, newer versions (untested)                                                                                           |
+| Entry Point              | AutoMarkup                                                                                                                             |
+| Development Mode         | Prompt-driven (via Google Gemini Advanced 2.5 Pro)                                                                                     |
 
 ### Meta-Prompting Demos
 
-|   |   |
-|---|---|
-|**Conversation Title**|**Public URL**|
-|Meta-Prompting with Templated Prompt - VBA Citation Recovery Workflow Design|`https://g.co/gemini/share/3239df438507` ([Link][TemplatedMetaPrompting])|
-|Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging|`https://g.co/gemini/share/57062c5d202c` ([Link][ICLMetaPromptingDebugging])|
-
-
-
-
-
-
+- [Meta-Prompting with Templated Prompt - VBA Citation Recovery Workflow Design][TemplatedMetaPrompting] ([Private URL](https://gemini.google.com/app/efb8c56cfe127897))
+- [Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging][ICLMetaPromptingDebugging] ([Private URL](https://gemini.google.com/app/59e84d4879cebb1c))
 
 
 ---
