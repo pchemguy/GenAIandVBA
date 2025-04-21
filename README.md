@@ -19,7 +19,6 @@ This repository provides a practical solution and case study for improving acade
     - Detailed explanations and usage instructions (in this README).
 
 ---
----
 
 Academic manuscript authoring often involves integrating tools like Microsoft Word for writing, Zotero for reference management, and increasingly, Generative AI (GAI) for drafting and revision assistance. However, a common workflow challenge arises when transferring text between Word and plain-text AI interfaces: critical metadata, such as Zotero citation fields and internal document hyperlinks, is often lost. Furthermore, standard Zotero integration in Word does not automatically create navigable hyperlinks between in-text citations and their corresponding entries in the bibliography, hindering reader navigation, especially in PDF outputs.
 
