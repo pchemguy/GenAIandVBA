@@ -1,8 +1,10 @@
 # Prompt-Driven Development of VBA Macros for Management of Navigation and Field Information in Word/Zotero/AI Manuscript Authoring Workflow
 
-One basic approach to using generative AI assistance for manuscript development involves periodic transfer of sections of text to an AI conversation for revisions and copying revised text back into manuscript document file. If the text is developed using plain text markup, such as Markdown, metadata, such as cited references and hyperlinks are typically persevered (assuming text is not changed drastically). On the other hand, if the text is developed using MS Word, and the references are managed with a reference manager, such as [Zotero][], reference information is typically encoded via Word fields, and this information is lost when copying a section of text to a plain-text AI chat. Further, hyperlink information also used for local navigation is also lost for the same reason. Additionally, there was another issue that I wanted to address. While Zotero manages references and creates citations automatically, it does not create hyperlinks leading from citations to corresponding bibliographic items. When a paper with Zotero-based references is converted to the PDF format, all references become plain text without convenient hyperlinks that make it easy to find the cited item in the bibliography list, from where the sources can often than be accessed via cited DOI-based or publisher-based URLs. In an attempt to address these issues, I decided to developed a set of VBA macro modules as a proof-of-concept solution. The choice of VBA was dictated by its availability directly within MS Word without the need to install any additional software. And since I am working on text focused on generative AI (GAI) prompting and also want to use GAI for revising the text, it was a natural decision to use GAI for macro development.
+One basic approach to using generative AI assistance for manuscript development involves periodic transfer of sections of text to an AI conversation for revisions and copying revised text back into manuscript document file. If the text is developed using plain text markup, such as Markdown, metadata, such as cited references and hyperlinks are typically persevered (assuming text is not changed drastically). On the other hand, if the text is developed using MS Word, and the references are managed with a reference manager, such as [Zotero][], reference information is typically encoded via Word fields, and this information is lost when copying a section of text to a plain-text AI chat. Further, hyperlink information also used for local navigation is also lost for the same reason. Additionally, there was another issue that I wanted to address. While Zotero manages references and creates citations automatically, it does not create hyperlinks leading from citations to corresponding bibliographic items. When a paper with Zotero-based references is converted to the PDF format, all references become plain text without convenient hyperlinks that make it easy to find the cited item in the bibliography list, from where the sources can often than be accessed via cited DOI-based or publisher-based URLs.
 
-I am sharing generated macro modules, prompts and some related prompt engineering information, and one Google Gemini Advanced Pro 2.5 conversation used for revising one of the prompts and subsequent generation of the associated modules. The two other modules were generated in a separate conversation; however, that conversation has become somewhat messy due to my early experiments, and I do not see much value in sharing that conversation as well.
+In an attempt to address these issues, I decided to developed a set of VBA macro modules as a proof-of-concept solution. The choice of VBA was dictated by its availability directly within MS Word without the need to install any additional software. And since I am working on text focused on generative AI (GAI) prompting and also want to use GAI for revising the text, it was a natural decision to use GAI for macro development.
+
+I am sharing generated macro modules, prompts and some related prompt engineering information, and one Google Gemini Advanced 2.5 Pro conversation used for revising one of the prompts and subsequent generation of the associated modules. The two other modules were generated in a separate conversation; however, that conversation has become somewhat messy due to my early experiments, and I do not see much value in sharing that conversation as well.
 
 > [!Warning]
 > 
@@ -110,8 +112,6 @@ Help me create a prompt for generating a VBA6 / MS Word macro (use previous prom
 Make sure to ask me for clarification, if necessary, before starting the prompt generation process.
 ```
 
-## Notes on GAI-Driven VBA Code Generation
-
 ## VBA Modules
 ### Zotero Bibliographic Hyperlinks - modBibliographyHyperlinker
 
@@ -147,7 +147,7 @@ The code looks for the bibliography field and creates for each item a bookmark u
 | Development mode      | Prompt-driven                                                               |
 | Prompt source         | [modBibliographyHyperlinkerPrompt.md][]                                     |
 | AI conversation title | Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging |
-| Generative AI model   | Google Gemini Advanced Pro 2.5                                              |
+| Generative AI model   | Google Gemini Advanced 2.5 Pro                                              |
 | Public URL            | https://g.co/gemini/share/57062c5d202c                                      |
 | Private URL           | https://gemini.google.com/app/59e84d4879cebb1c                              |
 
@@ -163,7 +163,7 @@ The code looks for the bibliography field and creates for each item a bookmark u
 | Development mode      | Prompt-driven                                                               |
 | Prompt source         | [modZoteroFieldRecoveryPrompt.md][]                                         |
 | AI conversation title | Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging |
-| Generative AI model   | Google Gemini Advanced Pro 2.5                                              |
+| Generative AI model   | Google Gemini Advanced 2.5 Pro                                              |
 | Public URL            | https://g.co/gemini/share/57062c5d202c                                      |
 | Private URL           | https://gemini.google.com/app/59e84d4879cebb1c                              |
 
@@ -180,7 +180,7 @@ The code looks for the bibliography field and creates for each item a bookmark u
 | Prompt source         | [MarkupProcessorPrompt.md][]                    |
 | Meta-prompt source    | [MarkupProcessorPromptMeta.md][]                |
 | AI conversation title | VBA-Based Navigation Markup Workflow in MS Word |
-| Generative AI model   | Google Gemini Advanced Pro 2.5                  |
+| Generative AI model   | Google Gemini Advanced 2.5 Pro                  |
 | Public URL            | https://g.co/gemini/share/50e01f6b36be          |
 | Private URL           | https://gemini.google.com/app/1571d7a44e0e6355  |
 
@@ -189,14 +189,14 @@ The code looks for the bibliography field and creates for each item a bookmark u
 |                       |                                                                              |
 | --------------------- | ---------------------------------------------------------------------------- |
 | AI conversation title | Meta-Prompting with Templated Prompt - VBA Citation Recovery Workflow Design |
-| Generative AI model   | Google Gemini Advanced Pro 2.5                                               |
+| Generative AI model   | Google Gemini Advanced 2.5 Pro                                               |
 | Public URL            | https://g.co/gemini/share/3239df438507                                       |
 | Private URL           | https://gemini.google.com/app/efb8c56cfe127897                               |
 
 |                       |                                                                             |
 | --------------------- | --------------------------------------------------------------------------- |
 | AI conversation title | Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging |
-| Generative AI model   | Google Gemini Advanced Pro 2.5                                              |
+| Generative AI model   | Google Gemini Advanced 2.5 Pro                                              |
 | Public URL            | https://g.co/gemini/share/57062c5d202c                                      |
 | Private URL           | https://gemini.google.com/app/59e84d4879cebb1c                              |
 
