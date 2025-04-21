@@ -7,3 +7,18 @@ My findings suggest a trade-off: quick meta-prompting on concise prompts yields 
 This case study, including the full process, VBA code, prompts, and AI conversations, is shared on GitHub for those interested in AI-driven development, VBA, or academic workflows: https://github.com/pchemguy/GenAIandVBA
 
 #AI #LLM #PromptEngineering #MetaPrompting #VBA #MicrosoftWord #Zotero #WorkflowAutomation #GoogleGemini
+
+
+---
+
+
+Explored meta-prompting strategies for AI-driven development of VBA macros to improve Word/Zotero/AI authoring workflows (tackling issues like metadata loss). GitHub repo has the case study, docs, VBA code, prompts & AI convos: https://github.com/pchemguy/GenAIandVBA
+
+#VBA #AI #PromptEngineering #MetaPrompting #Zotero #MicrosoftWord #AcademicWriting #OpenSource #GoogleGemini
+
+---
+
+Стратегии мета-промптинга для ИИ-разработки макросов VBA с целью улучшения процесса подготовки документов в Word/Zotero/ИИ (решение таких проблем, как потеря метаданных). Репозиторий на GitHub содержит кейс-стади, документацию, код VBA, промпты и ссылки на диалоги с ИИ: https://github.com/pchemguy/GenAIandVBA
+
+#VBA #AI #PromptEngineering #MetaPrompting #Zotero #MicrosoftWord #AcademicWriting #OpenSource #GoogleGemini 
+
