@@ -37,8 +37,8 @@ When creating an initial prompt draft (before meta-prompting), the focus is on d
 
 Complexity in prompts requires careful management. I use Markdown formatting (via Obsidian.md) to structure prompts. To develop these structured prompts, I used meta-prompts.
 
-- **Basic Meta-Prompt:** The simplest form is instructing the LLM to improve a given prompt:
-    
+- **Basic Meta-Prompt:** The simplest form is instructing the LLM to improve a given prompt, implicitly encouraging the LLM to analyze clarity, ambiguity, and completeness:
+
 ```
 Help me improve the following prompt:
 
@@ -46,11 +46,8 @@ Help me improve the following prompt:
 
 {PROMPT_TO_BE_ANALYZED}
 ```
-    
-    This meta-prompt encourages the LLM to analyze clarity, ambiguity, and completeness.
-    
+
 - **Elaborated Meta-Prompts:** For more complex tasks, the meta-prompt itself can be more detailed, guiding the LLM on how to analyze and improve the target prompt (e.g., focusing on technical accuracy, positive language, logical flow). For more advanced meta-prompts, meta-meta-prompt (`Help me improve the following meta-prompt`) may help refine the prompt-improvement instructions themselves. An example is documented in [MarkupProcessorPromptMeta.md][] and the resulting chat [MarkupProcessorChat][].
-    
 - **Templated Meta-Prompts for Workflow Generation:** I also used meta-prompts to instruct the LLM to fill in specific parts of a prompt template, such as devising the detailed algorithm steps for a macro. The LLM analyzes the provided context and suggests the workflow logic, which can then be refined manually or interactively (see full example in conversation: [Meta-Prompting with Templated Prompt - VBA Citation Recovery Workflow Design][TemplatedMetaPrompting]).
 
 ```
