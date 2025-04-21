@@ -1,8 +1,14 @@
+- **Methodology:** Demonstrates **Prompt-Driven Development (PDD)** using Google Gemini Advanced 2.5 Pro.
+    - Includes insights into using **meta-prompting** and In-Context Learning (ICL) to generate and refine the VBA code.
+    - Investigates the trade-offs between prompt engineering effort and debugging time. Suggests that investing in more detailed prompts upfront (guiding the AI's logic) can significantly streamline subsequent AI-driven development of the generated VBA code, especially for complex tasks.
+
+
+
 AI-Generated VBA: Balancing Prompt Effort vs. Debugging in Word/Zotero Macro Development
 
 How much effort should go into prompt engineering vs. debugging when using AI for code generation? I explored this in the GenAIandVBA project, using advanced meta-prompting strategies to develop VBA macros that enhance the Word/Zotero academic writing workflow.
 
-My findings suggest a trade-off: quick meta-prompting on relatively concise prompts yields fast solutions for basic tasks. However, for more complex VBA code that modifies Word documents, investing in more detailed prompts to guide the AI's logic upfront seems beneficial, potentially reducing debugging time later.
+My findings suggest a trade-off: quick meta-prompting on relatively concise prompts yields fast solutions for basic tasks. For more complex problems that may necessitate subsequent AI-driven development of the initially generated VBA code, investing in more detailed prompts to guide the AI's logic upfront seems beneficial, potentially reducing debugging time later.
 
 It's a small case study, but the full process, VBA code, prompts, and AI conversations are shared on GitHub for those interested in AI-driven development, particularly with VBA or for academic workflows: https://github.com/pchemguy/GenAIandVBA
 
