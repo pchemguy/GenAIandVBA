@@ -1,5 +1,26 @@
 # AI-Driven VBA Development for Enhanced Word/Zotero/AI Manuscript Authoring Workflows
 
+## Summary
+
+This repository provides a practical solution and case study for improving academic authoring workflows involving Microsoft Word, Zotero, and AI assistants.
+- **Problem Solved:** Addresses common issues like:
+    - Loss of Zotero citation metadata (Word fields) when editing text with AI tools.
+    - Loss of internal Word hyperlinks during external editing.
+    - Lack of direct navigation links from in-text citations to bibliography entries in Word/PDF documents.
+- **Solution:** Offers a suite of **VBA macros** for Word 2002/2003 (potentially compatible with newer versions, untested) to:
+    - Automatically create hyperlinks between Zotero citations and bibliography items (`modBibliographyHyperlinker`).
+    - Recover lost Zotero field information after external plain-text editing (`modZoteroFieldRecovery`).
+    - Manage internal document bookmarks and hyperlinks using a plain-text markup that survives copy-pasting (`MarkupProcessor`).
+- **Methodology:** Demonstrates **Prompt-Driven Development (PDD)** using Google Gemini Advanced 2.5 Pro. Includes insights into using meta-prompting and In-Context Learning (ICL) to generate and refine the VBA code.
+- **Contents:** Includes:
+    - Ready-to-use VBA module source code (`.bas` files).
+    - The exact prompts used for AI generation.
+    - Links to the AI conversations demonstrating the development and debugging process.
+    - Detailed explanations and usage instructions (in this README).
+
+---
+---
+
 Academic manuscript authoring often involves integrating tools like Microsoft Word for writing, Zotero for reference management, and increasingly, Generative AI (GAI) for drafting and revision assistance. However, a common workflow challenge arises when transferring text between Word and plain-text AI interfaces: critical metadata, such as Zotero citation fields and internal document hyperlinks, is often lost. Furthermore, standard Zotero integration in Word does not automatically create navigable hyperlinks between in-text citations and their corresponding entries in the bibliography, hindering reader navigation, especially in PDF outputs.
 
 To address these workflow limitations, this project explores the use of **Prompt-Driven Development (PDD)**, leveraging Large Language Models (LLMs), specifically Google Gemini Advanced 2.5 Pro, to create a suite of Visual Basic for Applications (VBA) macros for Word. The choice of VBA allows these tools to function directly within Word without external software installation. This document details the PDD methodology, focusing on **meta-prompting** techniques used to generate and refine the prompts that guided the AI in creating the VBA code. I share the developed VBA modules, the prompts used, AI conversations illustrating development workflows, and insights gained during the AI-assisted development process.
