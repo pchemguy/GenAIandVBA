@@ -68,7 +68,7 @@ Create a self-contained VBA6 macro module... for recovery of field-based in-text
 {To be suggested by AI} 
 ```
 
-- **Meta-Prompting with In-Context Learning (ICL):** When developing subsequent prompts for similar tasks, previously successful prompts can be provided as examples (ICL) within the meta-prompt. This helps the LLM understand the desired style, structure, and level of detail. For instance, when creating the prompt for `modBibliographyHyperlinker`, the prompt for `modZoteroFieldRecovery` was referenced. _(See conversation: [Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging][ICLMetaPromptingDebugging])_
+- **Meta-Prompting with In-Context Learning (ICL):** When developing subsequent prompts for similar tasks, previously successful prompts can be provided as examples (ICL) within the meta-prompt. This helps the LLM understand the desired style, structure, and level of detail. For instance, when creating the prompt for `modBibliographyHyperlinker`, the prompt for `modZoteroFieldRecovery` was referenced. (See conversation: [Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging][ICLMetaPromptingDebugging])
 
 > **Important Note on Prompts:** The shared prompts ([MarkupProcessorPrompt.md][], [modBibliographyHyperlinkerPrompt.md][], [modZoteroFieldRecoveryPrompt.md][]) use **Markdown formatting**. When using these prompts with an AI, ensure you copy the **raw Markdown source**, not the rendered HTML, to preserve formatting crucial for the AI's interpretation. On GitHub, use the "Raw" button to view the source.
 
@@ -149,17 +149,32 @@ Currently, there is no custom GUI. To run a macro:
 
 ### modBibliographyHyperlinker
 
-| | |
-| :------------------------- | :-------------------------------------------------------------------------- |
-| Module | [modBibliographyHyperlinker.bas][] |
-| Prompt | [modBibliographyHyperlinkerPrompt.md][] |
-| Development Conversation | [Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging][ICLMetaPromptingDebugging] (Public: https://g.co/gemini/share/57062c5d202c) |
-| Language | VBA Version 6 |
-| Host Platform (Tested) | MS Word 2002/2003 |
-| Host Platform (Untested) | MS Word, newer versions |
-| Entry Point | CreateBibliographyHyperlinks |
-| Required VBA References | Microsoft VBScript Regular Expressions 5.5, Microsoft Scripting Runtime |
-| Development Mode | Prompt-driven (via Google Gemini Advanced 2.5 Pro) |
+
+|                       |                                                                             |
+| --------------------- | --------------------------------------------------------------------------- |
+| Module                | [modBibliographyHyperlinker.bas][]                                          |
+| Language              | VBA Version 6                                                               |
+| Primary host platform | MS Word 2002/2003                                                           |
+| Other host platforms  | MS Word, newer versions (not tested)                                        |
+| Entry Point           | `CreateBibliographyHyperlinks`                                              |
+| Development mode      | Prompt-driven                                                               |
+| Prompt source         | [modBibliographyHyperlinkerPrompt.md][]                                     |
+| AI conversation title | Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging |
+| Generative AI model   | Google Gemini Advanced 2.5 Pro                                              |
+| Public URL            | https://g.co/gemini/share/57062c5d202c                                      |
+| Private URL           | https://gemini.google.com/app/59e84d4879cebb1c                              |
+
+
+|                          |                                                                                                                                                                             |
+| :----------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Module                   | [modBibliographyHyperlinker.bas][]                                                                                                                                          |
+| Prompt                   | [modBibliographyHyperlinkerPrompt.md][]                                                                                                                                     |
+| Development Conversation | [Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging][ICLMetaPromptingDebugging]  <br>(Private URL: https://gemini.google.com/app/59e84d4879cebb1c) |
+| Language                 | VBA Version 6                                                                                                                                                               |
+| Development Platform     | MS Word 2002/2003                                                                                                                                                           |
+| Untested Host Platform   | MS Word, newer versions                                                                                                                                                     |
+| Entry Point              | CreateBibliographyHyperlinks                                                                                                                                                |
+| Development Mode         | Prompt-driven (via Google Gemini Advanced 2.5 Pro)                                                                                                                          |
 
 ### modZoteroFieldRecovery
 
