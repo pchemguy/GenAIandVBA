@@ -6,4 +6,4 @@ My findings suggest a trade-off: quick meta-prompting on concise prompts yields 
 
 This case study, including the full process, VBA code, prompts, and AI conversations, is shared on GitHub for those interested in AI-driven development, VBA, or academic workflows: https://github.com/pchemguy/GenAIandVBA
 
-**#AI** **#LLM** **#PromptEngineering** **#MetaPrompting** **#VBA** **#MicrosoftWord** **#Zotero** **#WorkflowAutomation** **#GoogleGemini**
+#AI #LLM #PromptEngineering #MetaPrompting #VBA #MicrosoftWord #Zotero #WorkflowAutomation #GoogleGemini
