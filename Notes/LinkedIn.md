@@ -22,3 +22,4 @@ Explored meta-prompting strategies for AI-driven development of VBA macros to im
 
 #VBA #AI #PromptEngineering #MetaPrompting #Zotero #MicrosoftWord #AcademicWriting #OpenSource #GoogleGemini 
 
+Meta-Prompting for AI-Driven VBA Coding: Balancing Prompt Engineering vs. Debugging Efforts
