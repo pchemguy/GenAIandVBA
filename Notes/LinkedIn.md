@@ -18,7 +18,7 @@ Explored meta-prompting strategies for AI-driven development of VBA macros to im
 
 ---
 
-Стратегии мета-промптинга для ИИ-разработки макросов VBA с целью улучшения процесса подготовки документов в Word/Zotero/ИИ (решение таких проблем, как потеря метаданных). Репозиторий на GitHub содержит кейс-стади, документацию, код VBA, промпты и ссылки на диалоги с ИИ: https://github.com/pchemguy/GenAIandVBA
+Опробованы стратегии мета-промптинга для ИИ-разработки макросов VBA на примере задачи улучшения процесса подготовки документов в Word/Zotero/ИИ (решение таких проблем, как потеря метаданных). Репозиторий на GitHub содержит кейс-стади, документацию, код VBA, промпты и ссылки на диалоги с ИИ: https://github.com/pchemguy/GenAIandVBA
 
 #VBA #AI #PromptEngineering #MetaPrompting #Zotero #MicrosoftWord #AcademicWriting #OpenSource #GoogleGemini 
 
