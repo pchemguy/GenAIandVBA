@@ -14,6 +14,6 @@ Devise a workflow to be placed in place of "{TO BE SUGGESTED BY AI}".
 ... (Description of the task) ...
 ... (Detailed requirements) ...
 
-### Processing Steps:
+## Processing Steps:
 {TO BE SUGGESTED BY AI} 
 ```
