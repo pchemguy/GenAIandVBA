@@ -87,7 +87,7 @@ Create a self-contained VBA6 macro module... for recovery of field-based in-text
 {To be suggested by AI} 
 ```
 
-- **Meta-Prompting with In-Context Learning (ICL):** When developing subsequent prompts for similar tasks, previously successful prompts can be provided as examples (ICL) within the meta-prompt. This helps the LLM understand the desired style, structure, and level of detail. For instance, when creating the prompt for `modBibliographyHyperlinker`, the prompt for `modZoteroFieldRecovery` was referenced. (See conversation: [Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging](https://gemini.google.com/share/57062c5d202c#:~:text=use%20previous%20prompts%20as%20a%20reference))
+- **Meta-Prompting with In-Context Learning (ICL):** When developing subsequent prompts for similar tasks, previously successful prompts can be provided as examples (ICL) within the meta-prompt. This helps the LLM understand the desired style, structure, and level of detail. For instance, when creating the prompt for `modBibliographyHyperlinker`, the prompt for `modZoteroFieldRecovery` was referenced. (See conversation: Meta-Prompting with ICL and Refinement - BMK - Generated VBA Code Debugging, use this link https://gemini.google.com/share/57062c5d202c#:~:text=use%20previous%20prompts%20as%20a%20reference).
 
 > **Important Note on Prompts:** The shared prompts ([MarkupProcessorPrompt.md][], [modBibliographyHyperlinkerPrompt.md][], [modZoteroFieldRecoveryPrompt.md][]) use **Markdown formatting**. When using these prompts with an AI, ensure you copy the **raw Markdown source**, not the rendered HTML, to preserve formatting crucial for the AI's interpretation. On GitHub, use the "Raw" button to view the source.
 
