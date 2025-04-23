@@ -218,4 +218,4 @@ Currently, there is no custom GUI. To run a macro:
 [modZoteroFieldRecovery.bas]: modZoteroFieldRecovery.bas
 [MarkupProcessorChat]: https://g.co/gemini/share/50e01f6b36be
 [TemplatedMetaPrompting]: https://g.co/gemini/share/3239df438507
-[ICLMetaPromptingDebugging]: https://g.co/gemini/share/57062c5d202c
+[ICLMetaPromptingDebugging]: https://gemini.google.com/share/57062c5d202c#:~:text=use%20previous%20prompts%20as%20a%20reference
